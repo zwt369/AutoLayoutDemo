@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v3B-g9-Rpl">
+                                <rect key="frame" x="183" y="83" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="rJQ-BQ-Sdc"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="zEJ-YU-LTH"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c71-Km-oG3">
+                                <rect key="frame" x="217" y="144" width="157" height="300"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yob-kv-qlO">
+                                <rect key="frame" x="40" y="144" width="157" height="300"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="3Mg-Ba-1Nf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c71-Km-oG3" firstAttribute="top" secondItem="v3B-g9-Rpl" secondAttribute="bottom" constant="30" id="027-aK-kJK"/>
+                            <constraint firstItem="v3B-g9-Rpl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="163" id="0r2-PQ-hId"/>
+                            <constraint firstItem="v3B-g9-Rpl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="ChZ-YW-lP0"/>
+                            <constraint firstItem="c71-Km-oG3" firstAttribute="height" secondItem="yob-kv-qlO" secondAttribute="height" id="K83-hp-D8A"/>
+                            <constraint firstItem="c71-Km-oG3" firstAttribute="width" secondItem="yob-kv-qlO" secondAttribute="width" id="XdC-zR-UsC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v3B-g9-Rpl" secondAttribute="trailing" constant="162" id="b8Z-EZ-UkR"/>
+                            <constraint firstItem="yob-kv-qlO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="cmY-bw-gC7"/>
+                            <constraint firstItem="c71-Km-oG3" firstAttribute="leading" secondItem="yob-kv-qlO" secondAttribute="trailing" constant="20" id="kvV-zL-krE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yob-kv-qlO" secondAttribute="trailing" priority="750" constant="20" id="lAT-lC-PAD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c71-Km-oG3" secondAttribute="trailing" priority="750" constant="20" id="uNb-vU-u4r"/>
+                            <constraint firstItem="yob-kv-qlO" firstAttribute="top" secondItem="v3B-g9-Rpl" secondAttribute="bottom" constant="30" id="yno-8C-w1F"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="autoSwitch" destination="v3B-g9-Rpl" id="gh3-cN-2mf"/>
+                        <outlet property="blueView" destination="uNb-vU-u4r" id="2Ou-mG-bxb"/>
+                        <outlet property="distance" destination="kvV-zL-krE" id="4qx-er-vj4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="303"/>
+        </scene>
+    </scenes>
+</document>
